@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#f3f2f2"/><text x="50" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#d6006c">BTS</text></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/broadsheet-bfe467b2-7952-4d8d-a5de-4089b3296bc7/styles.css">
+<script src="_ds/broadsheet-bfe467b2-7952-4d8d-a5de-4089b3296bc7/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+body { margin: 0; background: var(--color-bg); }
+a { color: var(--color-accent); }
+a:hover { color: var(--color-accent-700); }
+.blank { color: var(--color-accent-2); border-bottom: 1px dashed var(--color-accent-2); }
+.lede::first-letter {
+  float: left; font-size: 3.4em; line-height: 0.78; padding: 0.04em 0.08em 0 0;
+  color: var(--color-accent-2);
+}
+@media print { .tabrow, .regmark { display: none !important; } }
+</style>
+</helmet>
+
+<div style="position: relative; max-width: 1000px; margin: 0 auto; padding: 44px 24px 96px; font-family: var(--font-body); color: var(--color-text)">
+
+  <svg class="regmark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="position: absolute; top: 14px; right: 16px; opacity: 0.5"><circle cx="11" cy="11" r="6.5" fill="none" stroke="var(--color-text)" stroke-width="0.8"></circle><path d="M11 0v22M0 11h22" stroke="var(--color-text)" stroke-width="0.8"></path></svg>
+
+  <div style="display: flex; flex-direction: column; gap: 7px; margin-bottom: 26px">
+    <div style="height: 6px; background: var(--color-text)"></div>
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase">
+      <span>EDITION FOR WHOEVER IS STAYING</span>
+      <span style="color: var(--color-accent-700)"><br></span>
+      <span>Vol. 1, No. 1</span>
+    </div>
+    <div style="height: 1px; background: var(--color-text)"></div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px; margin: 0 0 24px">
+  <h1 class="cmyk-head" style="font-size: clamp(30px, 5.4vw, 60px); line-height: 1.06; letter-spacing: -0.02em; margin: 0; text-box: trim-both cap alphabetic">
+    <span class="paper">Bonnie, Tifa<br>and Soybean</span>
+    <span class="plate plate-c" aria-hidden="true">Bonnie, Tifa<br>and Soybean</span>
+    <span class="plate plate-m" aria-hidden="true">Bonnie, Tifa<br>and Soybean</span>
+    <span class="plate plate-y" aria-hidden="true">Bonnie, Tifa<br>and Soybean</span>
+  </h1>
+
+  <div style="flex: 1 1 320px; display: flex; gap: 18px">
+    <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 8px">
+      <image-slot id="head-bonnie" shape="circle" src="uploads/5852750903927050595.jpg" style="width: 100%; height: auto; aspect-ratio: 1 / 1" placeholder="Bonnie"></image-slot>
+      <span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase">Bonnie</span>
+    </div>
+    <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 8px">
+      <image-slot id="head-tifa" shape="circle" src="uploads/5812380805504896879.jpg" style="width: 100%; height: auto; aspect-ratio: 1 / 1" placeholder="Tifa"></image-slot>
+      <span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase">Tifa</span>
+    </div>
+    <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 8px">
+      <image-slot id="head-soybean" shape="circle" src="uploads/5852750903927050594.jpg" style="width: 100%; height: auto; aspect-ratio: 1 / 1" placeholder="Soybean"></image-slot>
+      <span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase">Soybean</span>
+    </div>
+  </div>
+  </div>
+
+  <p style="font-size: 21px; line-height: 1.45; font-style: italic; max-width: 48ch; margin: 0 0 10px; width: 114px; height: 42px">Care Guide<br></p><div class="tabrow" style="display: flex; flex-direction: column; gap: 6px; margin-bottom: 52px">
+    <div style="height: 1px; background: var(--color-text)"></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 2px 32px; padding: 4px 0">
+      <button style="display: flex; align-items: baseline; gap: 8px; padding: 6px 0; background: transparent; border: 0; cursor: pointer; font-family: var(--font-body); font-size: 15px; color: var(--color-text)" onClick="{{ go0 }}" style-hover="{ color: 'var(--color-accent-700)' }">
+        <span style="font-size: 11px; letter-spacing: 0.1em; color: var(--color-accent)">01</span>
+        <span style="display: flex; flex-direction: column; gap: 5px; align-items: flex-start">
+          <span>Front gate and door</span>
+          <sc-if value="{{ t0 }}" hint-placeholder-val="{{ true }}"><span style="display: block; align-self: stretch; height: 3px; background: var(--color-accent-2)"></span></sc-if>
+        </span>
+      </button>
+      <button style="display: flex; align-items: baseline; gap: 8px; padding: 6px 0; background: transparent; border: 0; cursor: pointer; font-family: var(--font-body); font-size: 15px; color: var(--color-text)" onClick="{{ go1 }}" style-hover="{ color: 'var(--color-accent-700)' }">
+        <span style="font-size: 11px; letter-spacing: 0.1em; color: var(--color-accent)">02</span>
+        <span style="display: flex; flex-direction: column; gap: 5px; align-items: flex-start">
+          <span>Morning routine</span>
+          <sc-if value="{{ t1 }}"><span style="display: block; align-self: stretch; height: 3px; background: var(--color-accent-2)"></span></sc-if>
+        </span>
+      </button>
+      <button style="display: flex; align-items: baseline; gap: 8px; padding: 6px 0; background: transparent; border: 0; cursor: pointer; font-family: var(--font-body); font-size: 15px; color: var(--color-text)" onClick="{{ go2 }}" style-hover="{ color: 'var(--color-accent-700)' }">
+        <span style="font-size: 11px; letter-spacing: 0.1em; color: var(--color-accent)">03</span>
+        <span style="display: flex; flex-direction: column; gap: 5px; align-items: flex-start">
+          <span>Evening routine</span>
+          <sc-if value="{{ t2 }}"><span style="display: block; align-self: stretch; height: 3px; background: var(--color-accent-2)"></span></sc-if>
+        </span>
+      </button>
+            <button style="display: flex; align-items: baseline; gap: 8px; padding: 6px 0; background: transparent; border: 0; cursor: pointer; font-family: var(--font-body); font-size: 15px; color: var(--color-text)" onClick="{{ go4 }}" style-hover="{ color: 'var(--color-accent-700)' }">
+        <span style="font-size: 11px; letter-spacing: 0.1em; color: var(--color-accent)">04</span>
+        <span style="display: flex; flex-direction: column; gap: 5px; align-items: flex-start">
+          <span>Things to note</span>
+          <sc-if value="{{ t4 }}"><span style="display: block; align-self: stretch; height: 3px; background: var(--color-accent-2)"></span></sc-if>
+        </span>
+      </button>
+    </div>
+    <div style="height: 1px; background: var(--color-divider)"></div>
+  </div>
+
+  <sc-if value="{{ t0 }}" hint-placeholder-val="{{ true }}">
+    <div style="display: flex; flex-direction: column; gap: 24px">
+      <div style="display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 28px; align-items: start">
+        <div class="cmyk-num" style="font-size: clamp(72px, 13vw, 130px); font-weight: 600">
+          <span class="paper">01</span>
+          <span class="plate plate-c" aria-hidden="true">01</span>
+          <span class="plate plate-m" aria-hidden="true">01</span>
+          <span class="plate plate-y" aria-hidden="true">01</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h2 style="font-size: clamp(30px, 4.4vw, 46px); line-height: 1.05; margin: 0">Getting in, getting out</h2>
+          <p style="font-size: 18px; line-height: 1.5; font-style: italic; margin: 0; max-width: 42ch">Logistics may seem a little complicated, just requires some practice</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px">
+        <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+          <video loop="" src="uploads/IMG_8605.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: contain; background: var(--color-neutral-900); border: 1px solid var(--color-divider)"></video>
+          <figcaption style="font-size: 13px; line-height: 1.45"><span style="letter-spacing: 0.1em; text-transform: uppercase; font-size: 11px;"><b>Getting in</b><br></span><br>T<span style="color: color(srgb 0.12549 0.117647 0.113725 / 0.55); font-family: var(--font-body);">ap on the panel and the number pad will appear -&gt; type in passcode -&gt; gate will unlock, main door will also unlock shortly (make sure u push the main door with yr leg right after u open the gate, it locks back quite quickly).<br></span></figcaption>
+        </figure>
+        <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+          <img src="uploads/5893458659793112702.jpg" alt="A hand lifting the front door key off the shelf" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border: 1px solid var(--color-divider)">
+          <figcaption style="font-size: 13px; line-height: 1.45"><span style="letter-spacing: 0.1em; text-transform: uppercase; font-size: 11px;"><b>Getting out</b><br></span><br><p>The key is at the nook above the oven (non-labelled)<br><br>p.s the yellow labelled one beside it is for letter box :))</p></figcaption>
+        </figure>
+        <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+          <video loop="" src="uploads/IMG_8608.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: contain; background: var(--color-neutral-900); border: 1px solid var(--color-divider)"></video>
+          <figcaption style="font-size: 13px; line-height: 1.45"><span style="font-family: var(--font-body); color: color(srgb 0.12549 0.117647 0.113725 / 0.55);">Open the door -&gt; insert the key into the gate lock -&gt; turn anticlockwise -&gt; once gate is unlocked then place the key back in the nook :))</span></figcaption>
+        </figure>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 62ch; margin-top: 32px">
+        <div style="height: 3px; background: var(--color-accent-2)"></div>
+        <div style="display: flex; align-items: flex-start; gap: 16px">
+          <span aria-hidden="true" style="flex: none; font-size: clamp(64px, 9vw, 96px); line-height: 0.72; color: var(--color-accent-2)">*</span>
+          <p style="font-size: clamp(22px, 3.2vw, 30px); line-height: 1.3; font-style: italic; margin: 0">All three are indoor cats. Please keep them in their respective rooms before exiting the house.</p>
+        </div>
+        <div style="height: 1px; background: var(--color-text)"></div>
+        <div style="display: flex; flex-direction: column; gap: 18px">
+          <h3 style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0; color: var(--color-accent-700)">To lure back to their rooms</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px 32px">
+            <div style="display: flex; flex-direction: column; gap: 6px; max-width: 420px">
+              <h4 style="font-size: 22px; margin: 0">Beans, Bonnie and Tifa</h4>
+              <p style="font-size: 16px; line-height: 1.55; margin: 0; width: 476px; height: 34px">Shake treats bag (located in middle left cats cupboard drawer)</p>
+              <ul style="font-size: 16px; line-height: 1.55; margin: 0; padding-left: 22px">
+                <li>Beans <span style="white-space: nowrap">into the master bedroom</span></li>
+                <li>Bonnie and Tifa <span style="white-space: nowrap">into the cats room</span></li>
+              </ul>
+              <image-slot id="lure-beans" shape="rect" fit="cover" src="uploads/5929325012559007899.jpg" style="width: 100%; aspect-ratio: 4 / 3; margin-top: 4px" placeholder="Photo of the treats bag"></image-slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ t1 }}">
+    <div style="display: flex; flex-direction: column; gap: 48px">
+      <div style="display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 28px; align-items: start">
+        <div class="cmyk-num" style="font-size: clamp(72px, 13vw, 130px); font-weight: 600">
+          <span class="paper">02</span>
+          <span class="plate plate-c" aria-hidden="true">02</span>
+          <span class="plate plate-m" aria-hidden="true">02</span>
+          <span class="plate plate-y" aria-hidden="true">02</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h2 style="font-size: clamp(30px, 4.4vw, 46px); line-height: 1.05; margin: 0">Morning</h2>
+          <p style="font-size: 18px; line-height: 1.5; font-style: italic; margin: 0; max-width: 44ch">They'll wake you if you're late.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:00</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Say good morning</h3>
+            <p style="font-size: 17px; line-height: 1.55; margin: 0">When you get out of bed, the kiddos would have swarmed towards the door. Once door is opened, do make sure that the kitchen door is closed before they roam about the house.</p>
+            <p style="font-size: 17px; line-height: 1.55; margin: 14px 0 0">If you've slept with air-con:</p>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 6px 0 0; padding-left: 22px">
+              <li>When opening the mesh and closing the window in the master bedroom, please keep an eye out for the kiddos nearby.</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Video instruction</span>
+              <video loop="" src="uploads/video5931393163406090093.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 260px; max-width: 100%; height: auto; background: var(--color-neutral-200)"></video>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:00–6:30</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Water, Litter boxes, and Kiddos baskets</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 0; padding-left: 22px"><li>Dump overnight water, wash, and refill the water bowls with <b>filtered</b> water. One to be placed in the master bedroom for beans, and the other in the cats room for bonnie and tifa.</li></ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Filtered water</span>
+                <image-slot id="filtered-water" shape="rect" fit="cover" src="uploads/5929141364052399818.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Master bedroom · Beans</span>
+                <image-slot id="water-master" shape="rect" fit="cover" src="uploads/5929325012559007897.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Cats room · Bonnie and Tifa</span>
+                <image-slot id="water-cats" shape="rect" fit="cover" src="uploads/5929325012559007898.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Clear the kiddos' pee and poop from the litter boxes. The scoop would usually be by the side of one of the litter boxes, and the poop bag can be found in the wardrobe nook.</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px; width: 113px">
+                <span style="font-size: 11px; line-height: 1.35; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Scoop · Master bedroom · Beans</span>
+                <image-slot id="litter-scoop" shape="rect" fit="cover" src="uploads/5929325012559007895.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px; width: 113px">
+                <span style="font-size: 11px; line-height: 1.35; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Scoop · Cats room · Bonnie and Tifa</span>
+                <image-slot id="litter-scoop-cats" shape="rect" fit="cover" src="uploads/5929325012559007896-f9298178.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; line-height: 1.35; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700); width: 113px">Poop bags · wardrobe nook</span>
+                <image-slot id="poop-bags" shape="rect" fit="cover" src="uploads/5929325012559007894.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Bring one large litter box back into the cats room.</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 10px">
+              <image-slot id="litter-from" shape="rect" style="width: 200px; height: 150px" placeholder="Where it is"></image-slot>
+              <span aria-hidden="true" style="flex: none; font-size: 26px; line-height: 1; color: var(--color-accent-2)">→</span>
+              <image-slot id="litter-to" shape="rect" style="width: 200px; height: 150px" placeholder="Where it goes"></image-slot>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Bring 2 kiddos vegetable drain baskets back into the cats room.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:30</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Breakfast</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px"><li>Bring the food bowls from the steriliser in the kitchen onto the cats cupboard.</li></ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">The food bowls</span>
+              <image-slot id="bowls-cupboard" shape="rect" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px"><li>Open a fresh can of Wellness Complete <b>for Kitten</b> and Wellness Complete <b>Adult</b></li></ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Wellness Complete · For Kitten</span>
+                <image-slot id="food-wellness" shape="rect" fit="cover" src="uploads/5857254503554420355.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Wellness Complete · Adult</span>
+                <image-slot id="food-wellness-adult" shape="rect" fit="cover" src="uploads/5929141364052399820.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px"><li><b>Wellness Complete (for Kitten):</b> Use only <b>half </b>can — then split that half into 2 portions (for Bonnie and Tifa)</li><li style="margin-top: 6px; width: 785px; height: 54px"><b>Wellness Complete Adult:</b> Use only <b>half</b> can — (for Beans)</li></ul>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px"><li>Fill a cup with <b>warm</b> filtered water (from the kitchen's green water dispenser) and bring to the cats cupboard together with the bowls, add <b>one spoonful of water</b> to each of the food bowls</li></ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">The cup</span>
+                <image-slot id="water-cup" shape="rect" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Green water dispenser</span>
+                <image-slot id="water-dispenser" shape="rect" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Bowls with water added</span>
+                <image-slot id="bowls-watered" shape="rect" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Mix the food well</li>
+              <li style="margin-top: 6px">Give Beans first, then Bonnie and Tifa.</li>
+            </ul>
+            <p style="font-size: 17px; line-height: 1.55; margin: 8px 0 0"><span style="letter-spacing: 0.06em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-2)">To note</span><br>Bonnie and Tifa may require treats as encouragement to eat.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <image-slot id="treats-1" shape="rect" fit="cover" src="uploads/5857254503554420362.jpg" style="width: 150px; height: 150px" placeholder="Drop a photo"></image-slot>
+              <image-slot id="treats-2" shape="rect" fit="cover" src="uploads/5929325012559007899.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <p style="font-size: 17px; line-height: 1.55; margin: 10px 0 0">Place the treats on the floor first, once they've eaten the treats, place the treats in the bowl within their vision, then slowly move the food bowls closer to them.</p>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Video instruction</span>
+              <video loop="" src="uploads/video5857254503094428608.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 400px; aspect-ratio: 16 / 9; object-fit: contain; background: var(--color-neutral-200)"></video>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:45</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Unfinished breakfast</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Bring Beans' food bowl into the master bedroom and place it beside the automatic food bowl</li>
+              <li style="margin-top: 6px">Keep Beans in the master bedroom (door closed).</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <image-slot id="beans-auto-bowl" shape="rect" fit="cover" src="uploads/5929141364052399921.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Bring Bonnie's and Tifa's food bowl into the cats room and place them beside the water bowl</li>
+              <li style="margin-top: 6px">Keep Bonnie and Tifa in the cats room (door closed).</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <image-slot id="cats-room-bowls" shape="rect" fit="cover" src="uploads/5929141364052399922.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:45–6:55</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Get ready for work</h3>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:55–7:00</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Wash the food bowls, throw out the trash</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Retrieve the food bowls from the rooms while preventing the cats from escaping.</li>
+              <li style="margin-top: 6px">Clear the leftover food with tissue into the dustbin.</li>
+              <li style="margin-top: 6px">Wash the food bowls in the sink beside the washing machine, then place them on the cloth on the washing machine to dry.</li>
+              <li style="margin-top: 6px">Throw out the trash, and replace with a new plastic bag.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">Before you go</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Leaving the flat</h3>
+            <p style="font-size: 17px; line-height: 1.55; margin: 0">Living room lights &amp; fans, and kitchen lights are switched off. Master bedroom and cats room doors are closed. Front door and gate are shut properly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ t2 }}">
+    <div style="display: flex; flex-direction: column; gap: 48px">
+      <div style="display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 28px; align-items: start">
+        <div class="cmyk-num" style="font-size: clamp(72px, 13vw, 130px); font-weight: 600">
+          <span class="paper">03</span>
+          <span class="plate plate-c" aria-hidden="true">03</span>
+          <span class="plate plate-m" aria-hidden="true">03</span>
+          <span class="plate plate-y" aria-hidden="true">03</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h2 style="font-size: clamp(30px, 4.4vw, 46px); line-height: 1.05; margin: 0">Evening</h2>
+          <p style="font-size: 18px; line-height: 1.5; font-style: italic; margin: 0; max-width: 44ch">The social shift. Play, then dinner, then they settle wherever you are.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:00</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Sterilise food bowls &amp; Steam food</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Sterilise the ceramic food bowls and spoon for the <b>50 minutes</b> duration.</li>
+            </ul>
+            <video loop="" src="uploads/video5929325012099015183.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 260px; max-width: 100%; height: auto; margin: 10px 0 4px; background: var(--color-neutral-200)"></video>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 0; padding-left: 22px">
+              <li style="margin-top: 6px">Set up the rice cooker: Fill with water, then place the steaming basket and green ceramic plate in.</li>
+            </ul>
+            <video loop="" src="uploads/video5929325012099015181.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 260px; max-width: 100%; height: auto; margin: 10px 0 4px; background: var(--color-neutral-200)"></video>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 0; padding-left: 22px">
+              <li style="margin-top: 6px">Steam 1-2 pumpkin slices.</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; margin-top: 10px">
+              <image-slot id="pumpkin-steam" shape="rect" fit="cover" src="uploads/5857254503554420358.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              <video loop="" src="uploads/video5929325012099015182.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 260px; max-width: 100%; height: auto; background: var(--color-neutral-200)"></video>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Using the steam function of the rice cooker, for 40 minutes.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:10</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Litter boxes</h3>
+            <p style="font-size: 17px; line-height: 1.55; margin: 0">Clear the kiddos' pee and poop from the litter boxes in both the master bedroom and cats room. The scoop would usually be by the side of one of the litter boxes in each room, and the poop bag can be found in the wardrobe nook in the master bedroom</p>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px; width: 113px">
+                <span style="font-size: 11px; line-height: 1.35; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Scoop · Master bedroom · Beans</span>
+                <image-slot id="litter-scoop-evening" shape="rect" fit="cover" src="uploads/5929325012559007895.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px; width: 113px">
+                <span style="font-size: 11px; line-height: 1.35; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Scoop · Cats room · Bonnie and Tifa</span>
+                <image-slot id="litter-scoop-cats-evening" shape="rect" fit="cover" src="uploads/5929325012559007896-f9298178.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px; width: 113px">
+                <span style="font-size: 11px; line-height: 1.35; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Poop bags · wardrobe nook</span>
+                <image-slot id="poop-bags-evening" shape="rect" fit="cover" src="uploads/5929325012559007894.jpg" style="width: 113px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:20</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Play</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>The kiddos' toys are kept in the box with the green lid:</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <image-slot id="toy-1" shape="rect" fit="cover" src="uploads/5929141364052399962.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">6:45–7:00</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Pumpkins done, Steam wet food</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Be careful when opening the lid of the rice cooker, as the steam is very hot.</li>
+              <li style="margin-top: 6px">Remove the pumpkins into a bowl.</li>
+            </ul>
+            <image-slot id="pumpkin-bowl" shape="rect" fit="cover" src="uploads/5857254503554420360.jpg" style="width: 200px; height: 150px; margin: 10px 0 4px" placeholder="Drop a photo"></image-slot>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 0; padding-left: 22px">
+              <li style="margin-top: 6px">Take the two leftover half cans of wet food from breakfast out of the fridge (one Kitten, one Adult). Steam them one at a time in the rice cooker, <b>5 minutes each</b>.</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; margin-top: 10px">
+              <video loop="" src="uploads/video5929325012099015185.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 260px; max-width: 100%; height: auto; background: var(--color-neutral-200)"></video>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Once the sterilisation is completed, open the door of the steriliser and let the food bowls cool a little (cool enough for you to hold and also not to burn the cats as they lick their food off the bowls)</li>
+              <li style="margin-top: 6px">Split the steamed pumpkins into 3 servings and scoop them into each food bowl.</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <image-slot id="pumpkin-portions" shape="rect" fit="cover" src="uploads/5857254503554420363.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>After steaming the wet food for 5 minutes each, total of 10 minutes, move them from the rice cooker plate into the respective food bowls.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">7:00</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Dinner</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px"><li>Bring the food bowls from the steriliser in the kitchen onto the cats cupboard. Also the bowl with steamed cat food, and a cup of chilled filtered water.</li></ul>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px"><li>Open a fresh packet of Purina One</li></ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">The food bowls</span>
+                <image-slot id="bowls-cupboard-evening" shape="rect" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <span style="align-self: flex-end; height: 150px; display: flex; align-items: center; font-size: 28px; line-height: 1; color: var(--color-accent-700)">+</span>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Purina One</span>
+                <image-slot id="food-purina-evening" shape="rect" fit="cover" src="uploads/5857254503554420356.jpg" style="width: 144px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px"><li><b>Purina One:</b> Use the <b>full</b> packet — split into 3 portions</li></ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Full packet, three portions</span>
+              <image-slot id="portion-purina-evening" shape="rect" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Add one spoonful of chilled water to each of the food bowls</li>
+              <li style="margin-top: 6px">Add <b>one packet</b> of <b>Purina Fortiflora probiotics</b> to each of the food bowls. (It can be found in the top left drawer)</li>
+            </ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Fortiflora · top left drawer</span>
+                <image-slot id="probiotics" shape="rect" fit="cover" src="uploads/5857254503554420357.jpg" style="width: 150px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Bowls with probiotics added</span>
+                <image-slot id="bowls-probiotics" shape="rect" fit="cover" src="uploads/5931393163866083560.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Mixed</span>
+                <image-slot id="bowls-mixed-evening" shape="rect" fit="cover" src="uploads/5857254503554420364.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+              </div>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Mix the food well</li>
+              <li style="margin-top: 6px">Give Beans first, then Bonnie and Tifa</li>
+            </ul>
+            <p style="font-size: 17px; line-height: 1.55; margin: 10px 0 0"><span style="letter-spacing: 0.06em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-2)">To note</span><br>Bonnie and Tifa may require treats as encouragement to eat.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px">
+              <image-slot id="treats-1-evening" shape="rect" fit="cover" src="uploads/5857254503554420362.jpg" style="width: 150px; height: 150px" placeholder="Drop a photo"></image-slot>
+              <image-slot id="treats-2-evening" shape="rect" fit="cover" src="uploads/5929325012559007899.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <p style="font-size: 17px; line-height: 1.55; margin: 10px 0 0">Place the treats on the floor first, once they've eaten the treats, place the treats in the bowl within their vision, then slowly move the food bowls closer to them.</p>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Video instruction</span>
+              <video loop="" src="uploads/video5857254503094428608.mp4" controls="" playsinline="" preload="metadata" style="display: block; width: 400px; aspect-ratio: 16 / 9; object-fit: contain; background: var(--color-neutral-200)"></video>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">7:15</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Unfinished dinner</h3>
+            <p style="font-size: 17px; line-height: 1.55; margin: 4px 0 0">Depending on who has finished their food, then they can remain in the living room.</p>
+            <p style="font-size: 17px; line-height: 1.55; margin: 10px 0 0">If unfinished then:</p>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Bring Beans' food bowl into the master bedroom and place it beside the automatic food bowl</li>
+              <li style="margin-top: 6px">Keep Beans in the master bedroom (door closed).</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <image-slot id="beans-auto-bowl-evening" shape="rect" fit="cover" src="uploads/5929141364052399921.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 10px 0 0; padding-left: 22px">
+              <li>Bring Bonnie's and Tifa's food bowl into the cats room and place them beside the water bowl</li>
+              <li style="margin-top: 6px">Keep Bonnie and Tifa in the cats room (door closed).</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <image-slot id="cats-room-bowls-evening" shape="rect" fit="cover" src="uploads/5929141364052399922.jpg" style="width: 200px; height: 150px" placeholder="Drop a photo"></image-slot>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">8:00</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Wash and tidy</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>The kiddos can be messy eaters, if you notice any food bits on the floor, please give it a quick wipe with a wet tissue.</li>
+              <li style="margin-top: 6px">Clear the leftover food with tissue into the dustbin.</li>
+              <li style="margin-top: 6px">Wash the food bowls in the sink beside the washing machine, then place them <b>in the steriliser</b> and let it run for 50 minutes.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">8:00 – bedtime</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">Free time for the kiddos</h3>
+            <p style="font-size: 17px; line-height: 1.55; margin: 4px 0 0"><span style="letter-spacing: 0.06em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-2);">To note</span><br><b>Supper feed is at 9pm.</b></p>
+            <p style="font-size: 17px; line-height: 1.55; margin: 10px 0 0">It is encouraged to keep Beans in master bedroom, and Bonnie and Tifa in the cats room <b>BEFORE </b>the automatic feeders dispense their food. <br><br>Beans is having adult food while the other 2 kiddos are having kitten food. Please try not to mix, and separate them if they dash off to the opposite rooms.</p>
+
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(76px, 96px) 1fr; gap: 22px; align-items: start">
+          <div style="font-size: 15px; padding-top: 5px; text-align: right; letter-spacing: 0.04em; color: var(--color-accent-700)">Before bedtime</div>
+          <div style="position: relative; padding-left: 30px; padding-bottom: 34px; border-left: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 7px">
+            <span style="position: absolute; left: -5px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--color-accent)"></span>
+            <h3 style="font-size: 24px; line-height: 1.15; margin: 0">One last scoop</h3>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 4px 0 0; padding-left: 22px">
+              <li>Clear the kiddos' pee and poop from the litter boxes in both the master bedroom and cats room one last time.</li>
+            </ul>
+            <p style="font-size: 17px; line-height: 1.55; margin: 14px 0 0">If you do decide to sleep in the same room with all 3 kiddos:</p>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 6px 0 0; padding-left: 22px">
+              <li>Move one large litter box, and the vegetable drain baskets from the cats room into the master bedroom</li>
+              <li style="margin-top: 6px">Keep all three kiddos in the master bedroom with doors closed, before u step out of the house to throw the trash (Please clear especially with poop, it'll stink up the kitchen)</li>
+            </ul>
+            <p style="font-size: 17px; line-height: 1.55; margin: 14px 0 0">If you are sleeping in air-con:</p>
+            <ul style="font-size: 17px; line-height: 1.55; margin: 6px 0 0; padding-left: 22px">
+              <li>When opening the mesh and closing the window in the master bedroom, please keep an eye out for the kiddos nearby.</li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px">
+              <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Video instruction</span>
+              <div style="width: 150px; height: 200px; display: grid; place-items: center; background: var(--color-accent-2-100); border: 1px dashed var(--color-accent-2-300)">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; padding: 12px">
+                  <span style="display: block; width: 0; height: 0; border-left: 16px solid var(--color-accent-2); border-top: 10px solid transparent; border-bottom: 10px solid transparent"></span>
+                  <span style="font-size: 11px; line-height: 1.4; color: color-mix(in srgb, var(--color-text) 62%, transparent)">Send the clip and I'll drop it in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ t4 }}">
+    <div style="display: flex; flex-direction: column; gap: 56px">
+      <div style="display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 28px; align-items: start">
+        <div class="cmyk-num" style="font-size: clamp(72px, 13vw, 130px); font-weight: 600">
+          <span class="paper">04</span>
+          <span class="plate plate-c" aria-hidden="true">04</span>
+          <span class="plate plate-m" aria-hidden="true">04</span>
+          <span class="plate plate-y" aria-hidden="true">04</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h2 style="font-size: clamp(30px, 4.4vw, 46px); line-height: 1.05; margin: 0">Things to note</h2>
+          <p style="font-size: 18px; line-height: 1.5; font-style: italic; margin: 0; max-width: 44ch">Who's who, where things are, and who to ring if it all goes sideways.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <image-slot id="cat-bonnie" shape="rect" fit="cover" src="uploads/5852750903927050595.jpg" style="width: 100%; height: 280px" placeholder="Photo of Bonnie"></image-slot>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <h3 style="font-size: 26px; margin: 0">Bonnie</h3>
+            <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Chocolate boy</div>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">Rubs against yr legs, biggest ham chee peng, loves to jump up the fridge (BEWARE)</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <image-slot id="cat-tifa" shape="rect" fit="cover" src="uploads/5812380805504896879.jpg" style="width: 100%; height: 280px" placeholder="Photo of Tifa"></image-slot>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <h3 style="font-size: 26px; margin: 0">Tifa</h3>
+            <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Toasty girl</div>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">Vocal when needing attention, curious yet cautious</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <image-slot id="cat-soybean" shape="rect" fit="cover" src="uploads/5852750903927050594.jpg" style="width: 100%; height: 280px" placeholder="Photo of Soybean"></image-slot>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <h3 style="font-size: 26px; margin: 0">Soybean</h3>
+            <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700)">Foldy paws girl</div>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">Loves to chill under the bed and sofa, only can be lured with food, doesn't like to be carried</p>
+          </div>
+        </div>
+      </div>
+      <p style="font-size: 13px; margin: -36px 0 0; color: color-mix(in srgb, var(--color-text) 60%, transparent)">Drag a photo onto each frame.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <h3 style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0">House basics</h3>
+        <div style="height: 1px; background: var(--color-text)"></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 24px 32px">
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <h4 style="font-size: 19px; margin: 0">Wifi</h4>
+            <p style="font-size: 16px; line-height: 1.5; margin: 0">Network: Tilam's Humble Abode<br>Password: Tilam@135</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <h4 style="font-size: 19px; margin: 0">Bins</h4>
+            <p style="font-size: 16px; line-height: 1.5; margin: 0">Right outside the main door</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <h3 style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0; color: var(--color-accent-2)">If something goes wrong</h3>
+        <div style="height: 3px; background: var(--color-accent-2)"></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px 40px">
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 60%, transparent)">Us</div>
+            <p style="font-size: 21px; line-height: 1.4; margin: 0">Jasmine: <span style="color: var(--color-accent-2)">9151 2129</span><br>Amanda: <span style="color: var(--color-accent-2)">8952 4015</span></p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 60%, transparent)">Vet</div>
+            <p style="font-size: 21px; line-height: 1.4; margin: 0">Canopy Veterinary Centre<br><span style="color: var(--color-accent-2)">6980 8582</span></p>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">1 Yuan Ching Rd, #03-03, Singapore 618640</p>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">Weekdays: 10am–12:30pm, 1:30–5:30pm, 6:30–8:30pm<br>Weekends: 10am–12:30pm, 1:30–5:30pm</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 60%, transparent)">Emergency vet, out of hours</div>
+            <p style="font-size: 21px; line-height: 1.4; margin: 0">Paws N Claws Veterinary Surgery<br><span style="color: var(--color-accent-2)">8891 4417</span></p>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">6 Sin Ming Rd, #01-04 Sin Ming, Tower 2, Singapore 575585</p>
+            <p style="font-size: 16px; line-height: 1.5; margin: 6px 0 0">Weekdays: 10am–6pm, 8–11pm<br>Weekends: 7–11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <div style="margin-top: 72px; display: flex; flex-direction: column; gap: 8px">
+    <div style="height: 1px; background: var(--color-text)"></div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 55%, transparent)">
+      <span>Thank you for looking after them</span>
+      <span>They're better company than they let on</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startTab&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Front gate and door&quot;,&quot;Morning Routine&quot;,&quot;Evening Routine&quot;,&quot;Things to Note&quot;],&quot;default&quot;:&quot;Front gate and door&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Behavior&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 0 };
+  componentDidMount() {
+    const i = Component.TABS.indexOf(this.props.startTab);
+    if (i > 0) this.setState({ tab: i });
+  }
+  renderVals() {
+    const t = this.state.tab;
+    const go = (n) => () => this.setState({ tab: n });
+    return {
+      t0: t === 0, t1: t === 1, t2: t === 2, t4: t === 3,
+      go0: go(0), go1: go(1), go2: go(2), go4: go(3)
+    };
+  }
+}
+Component.TABS = ["Front gate and door", "Morning Routine", "Evening Routine", "Things to Note"];
+</script>
+</body>
+</html>
